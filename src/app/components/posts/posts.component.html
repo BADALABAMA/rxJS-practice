@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="post-card" *ngFor="let post of dataService.getData()">
+    <div class="post-info">
+      <h4 class="post-title">{{ post?.title }}</h4>
+      <p class="post-user-id">USER ID: {{ post?.userId }}</p>
+      <p class="post-id">ID: {{ post?.id }}</p>
+      <p class="post-text">{{ post?.body }}</p>
+    </div>
+  </div>
+</div>

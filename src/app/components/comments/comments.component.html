@@ -1,0 +1,9 @@
+<div *ngFor="let comment of dataService.getData()" class="post-card">
+  <div class="post-info">
+    <p class="post-id">POST ID: {{ comment?.postId }}</p>
+    <p class="post-user-id">ID: {{ comment?.id }}</p>
+    <p class="post-title">NAME: {{ comment?.name }}</p>
+    <p class="post-user-id">EMAIL: {{ comment?.email }}</p>
+  </div>
+  <p class="post-text">TEXT: {{ comment?.body }}</p>
+</div>

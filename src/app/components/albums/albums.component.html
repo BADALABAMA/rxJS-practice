@@ -1,0 +1,7 @@
+<div class="album-card" *ngFor="let album of dataService.getData()">
+  <div class="album-info">
+    <h4 class="album-title">{{ album.title }}</h4>
+    <p class="album-user-id">USER ID: {{ album.userId }}</p>
+    <p class="album-id">ID: {{ album.id }}</p>
+  </div>
+</div>

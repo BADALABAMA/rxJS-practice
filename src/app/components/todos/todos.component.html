@@ -1,0 +1,13 @@
+<div class="todo-card" *ngFor="let todo of dataService.getData()">
+  <div class="todo-info">
+    <h4 class="todo-title">{{ todo?.title }}</h4>
+    <p class="todo-user-id">USER ID: {{ todo?.userId }}</p>
+    <p class="todo-id">ID: {{ todo?.id }}</p>
+    <p
+      class="todo-completed"
+      [ngStyle]="{ color: todo.completed ? 'green' : 'red' }"
+    >
+      COMPLETED: {{ todo?.completed }}
+    </p>
+  </div>
+</div>
